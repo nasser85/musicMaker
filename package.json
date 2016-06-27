@@ -1,0 +1,28 @@
+{
+  "name": "musicmaker",
+  "version": "1.0.0",
+  "description": "Basic music making utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasser85/musicMaker.git"
+  },
+  "author": "Nasser Abouelazm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nasser85/musicMaker/issues"
+  },
+  "homepage": "https://github.com/nasser85/musicMaker#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7",
+    "pg": "^6.0.1",
+    "pg-hstore": "^2.3.2",
+    "play-sound": "0.0.9",
+    "sequelize": "^3.23.4",
+    "swig": "^1.4.2"
+  }
+}
