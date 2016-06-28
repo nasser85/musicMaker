@@ -6,9 +6,9 @@ var path = require('path');
 
 
 
-app.engine('html', swig.renderFile); // how to render html templates
-app.set('view engine', 'html'); // what file extension do our templates have
-app.set('views', path.join(__dirname, '/views')); // where to find the views
+app.engine('html', swig.renderFile);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, '/views'));
 swig.setDefaults({ cache: false });
 
 
