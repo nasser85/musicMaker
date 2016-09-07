@@ -16,23 +16,22 @@ arr = arr.join(' ');
 
 
 var songWriter = fs.writeFile('song.txt', arr, function (err) {
-	if (err) throw err;
-	console.log("It's saved");
-	fs.readFile('song.txt', function (err, data) {
-		if (err) throw err;
-		var songOne = data.toString().split(' ');
-		var len = songOne.length;
-		var song = songOne;
+	// if (err) throw err;
+	// console.log("It's saved");
+	// fs.readFile('song.txt', function (err, data) {
+	// 	if (err) throw err;
+	// 	var songOne = data.toString().split(' ');
+	// 	var len = songOne.length;
+	// 	var song = songOne;
 
-		var repeater = setInterval(function () {
-		  if (callCount < len) {
-		    player.play(p + scale[song[callCount]] + '.wav');
-		    callCount += 1;
-		  } else {
-		    clearInterval(repeater);
-		  }
-		}, 500);
-	})
+	// 	setTimeout(function () {
+	// 	    player.play(p + scale[song[callCount]] + '.wav');
+	// 	    callCount += 1;
+	// 	  } else {
+	// 	    clearTimeout(repeater);
+	// 	  }
+	// 	}, 500);
+	//})
 
 })
 
